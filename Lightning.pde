@@ -15,13 +15,13 @@ void setup()
 }
 void draw()
 {
-  stroke(0,255,0);
+  //stroke(0,255,0);
   
   while (endX < 500){
   endX = startX + (int) (Math.random()*5);
   endY = startY + (int) (Math.random()*20 - 10);
-  if (endY <= 150 ){
-   endY = 150;
+  if (endY <= 170 ){
+   endY = 170;
   }
   line(startX, startY, endX, endY);
   startX=endX;
@@ -37,4 +37,5 @@ startX = 0;
 startY =(int) (Math.random()*300) + 210;
 endX = 0;
 endY = 250;
+stroke((int) (Math.random()*40), 255 - (int) (Math.random()*180), (int) (Math.random()*40));
 }
